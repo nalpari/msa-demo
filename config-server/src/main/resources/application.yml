@@ -1,0 +1,68 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:nalpari/config-server.git # Github? ssh uri? ???? ??????
+          search-paths: config-file
+          default-label: main
+          ignore-local-ssh-settings: true
+          privateKey: |
+            -----BEGIN RSA PRIVATE KEY-----
+            MIIJJwIBAAKCAgEArkzwarycjt+R8LN99nPlXYsRWDdzFYM5hij2g8aSb/a/4mOG
+            kNclXG4L8AzN5pBPtOHvjXkI8XOwHGvm3fj1IcfQWYGmCgA3OhwY6yaoMuCzGrTl
+            pkGhAmNLIOY/m19d7mdKf/3rQ4SyZFOGJDoXWUSmgt7kOTjisrYYiiuG4QdesyUl
+            gRLttnn1ll11Tk9aimquWBAIzhvFEOObwOFiRVMcwURALf2VBHlF+vHnquYp4Onl
+            TJXfbY0jtHdEZxCMKI/FNiMaqffY35WJYIZXD87Ck723G6ihLPwWNz1s++Emblau
+            teC2Wy7kx1i2FlGLb+xK0Tuq0+yuByZJ5HYvXyC59lfzgWieIRJrmAf7nzZ0PU+L
+            yXWc01FHhFtvXtRwkD6CQqMpzTH5CqMqtf0kguOdtzniRJyPrsZonGAPoLicNau7
+            SXh211BZPkHC0DZDSSey7Cukoq/Oa+FiWl8f8RHq1iHT0rpynmnC55Caw0rkJjNI
+            0ErgthVwfuRtnyVLGBa9siLbKGcyh3QbrdC2S68OlGwatBTugcMPU+QlyyUSI7FF
+            ApiJBLh1nzWCYhvdpiFs01Ww8qfIf2Sv+7LQ9VEy/uui1TaloYJKRtK94df+TQ94
+            a3m2tZ+qnI0vneAefh64LappNvL1/cL5AHUlGQb4qr5txZjXLJ1UhIbxCnsCAwEA
+            AQKCAgA+zEGicyoE38/45PJxJPhyZ3RsUC4KhijniUKn35dK95/StQD6lklDr/Jl
+            HnfgpgXRqcVhN0Zdl8zPsKCRQO0wqokKdoeX+tPq/8yKjHb1PbfJ23sSF3snHRco
+            V0x7cjSpfFV/H8DvppOPSfh+fN+ErhM/+4ZGh5RFxw24Wk5SLRGVgcCtbGBw6ift
+            cOaevEBmtmDyIXTKrX6mwxqOt6VsTLGDgE+PQlm6LudjrlxFWn+kJSEUIrtJARzo
+            HEBs0a1tv77R7nvg2QcuJvZD7KLZcyjvid66/Fp1lq16YYsuhMQP5PM1XCzXVWHf
+            4LpZ+C9At+WM1O6LRC6/LLBau6n9B8WMWaXVZe0QA6uRcCZkvsprx58jHk08a6oT
+            H7AIyuBjjLqeAAs772IQqtp8THiRgkaMFkeNNjNat/DskWrPU6y8/3vPY7S8t8fN
+            cAMG+vy9WO0lEzGWHt18QNAcS6WzsxBtisXoocmHWlUDHxDjhFKjnSc3nlUK+Ua9
+            h5eVhynNDCIlDaSS35OotUWkXSNJGmvuQmnJumyb+uiOjvIB6HrX+9cuV2tQOaAL
+            mc/gIZcrFSZnsTtOkBEPHvmJnrU61YL8KAb56ircVM3FC94cazS/9vlL27ok9zJK
+            8M9itgLA8mfGsQQ82LAYb7ma50JfhlDyBRH7/rs17myey5IM4QKCAQEA2li6ND5n
+            sxMykd6s/gC6JYyrd0oLIey6BeUv0ecsrfUJRHzsboZH9ngUePJTOjYj8kJ+idZa
+            u5kPh8TrUZfzlW4l4p0lzAdXA+HGcrnUMxUPEBQNa1pbLB5VIBJmGoRR2zbERA9T
+            PTLxzwnsnBfZ0PbR+WqTrriSE2Tbel7ErVSbQPrH9UMTw+UIGZT/AJ75xBpjUYa1
+            FYLdXYLYsQVlN6NX0RYfZwb4n1Eh7BYVjZUvUA685zaE5Cl+wn2w+NgFukWEOlRj
+            947uGzExgGu7NrjYmZqC9BEadIoRB+pJLOidIQUoDT3LzvasxX00+ddZ+R3Mrk7M
+            u8jSyVWxNMfUZwKCAQEAzFu50/lI8HPs+fD/un0eV49J1QQWkJKJLG+SDpfu5hGN
+            r8Bwag3x+G9725qJSImxWqcW5S0NVajwvYmUJe+quapYrzfperD7Xu+KSREmA5Ls
+            W/Dxka8ukrKG7DL49E/+3+xPrI0Ul0oR9NY835CLfDPCS7R3GKiU9LaFNHya569+
+            B0C2Oc5fGUdsQv7LO2MEDdqN15MKW5hUCpnHfTFNZdBIObQL2BvrhNJhguQaaCCD
+            3jtMKw1cbH/UcQKfz7ZOZ7lKLL2Sq6xV/f69LjRlwlknI39sLPAl2BX7xCD+bSfW
+            yXoGV7S+e8N05pAxTMGYRp5HbMEn9AGX9NcskdvszQKCAQBqesqTn7tCgSIwML98
+            Py6IEUmtKtay/JbbOSFQ48POMakLVUCXxbRiZbzWHpan1K9C/VpoLbihs8r3EvkP
+            GWMYhFbFZI2CKjItGnWEjUsGfkaSOLUynSXJJiGtOkvAsraYiOS9rBuTxLxXkydo
+            F9mJJlTPpUHP+wKBorXFv2F6hcAQuDu7R7Lj3VVN5HNXAjAbiiLVJzQ4AVGiwKSb
+            712k/Gte88Lso2GrkA1S7JImMZKZIBbPSq8T9YhzoIglUnO4mx4Ys/7sQy+q4xqY
+            3fC2hv5aKheinpSgMJSNn5t/4xB9gd4+VtyFWZZ32M9056hg7D9c4eDF0vG4bam1
+            a54RAoIBAGAkBxiifp4g66vqpWSm2E95KdL9SWBakA5Hrv8Om2XBfFbiwgAi72Nh
+            j3OREGT/4mAzm6HVwCA8ioWg5AG07yzJ508HjuAZwyi2qOgXGTs1M91NTVisgcyi
+            ELeug1DtEYtnMVSMStOiFTCKWbkT14tnDlFvZVhEd09pTuGSfY3iEfh3iUNIw5Sw
+            9U3PcO1Pd+jMmU6B7q2IzIDwN9m+CBuOEWyUN75D5FloYFej2IiEQ4WZgAwBDSo+
+            OUOxaF3f9qL1mN/Tj90UBqCn53iFThpQtwkMOWgq0qMGNJvgqdHQnEvNDI7WiYbQ
+            PX769zaVHX6bmB6iAJna5hJZ6K32OUECggEASg8WFHhjvKRJIldPIzwg8f/itWWN
+            TY9FnZkha0lK/JSwND/ezRGXercyUKojSySq4t2DJ7T3nwShM8rhPl2hvIEeOdKF
+            TpgcIhwRX4/9kp675X7KqrJGpVQsaSyor8lKmNGzVxRz3OWaxSwb3EZY/IPc478I
+            baxZ1QO++G7r5sS+E3YsPSmPNcN/cGIvjA4P+g2ZeXrMvAVBI9kYosBKkWAZJA5Y
+            y5oeY6QWj0uGTHJKuAZE8uDy2TFpmmahTBnMERnPjPjN1GC7t0yg+JLmYGIrOvpd
+            xljdO2kOLZLmYBtrHCwCZw9NwJZsoM9Fjstbwxljv+KhB3yckMDiz8ZCFA==
+            -----END RSA PRIVATE KEY-----
+config:
+  username: devgrr
+  password: qwer1234

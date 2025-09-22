@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: test-service
+  profiles:
+    active: dev
+  config:
+#    import: optional:configserver:http://devgrr:qwer1234@localhost:8888
+    import: configserver:http://devgrr:qwer1234@localhost:8888
+
+# Swagger UI 설정
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    enabled: true
+    try-it-out-enabled: true
+    operations-sorter: method
+    tags-sorter: alpha
+  api-docs:
+    path: /v3/api-docs
+    enabled: true
+  show-actuator: true

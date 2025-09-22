@@ -1,0 +1,476 @@
+> Task :compileJava UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :resolveMainClassName UP-TO-DATE
+
+> Task :bootRun
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+[32m :: Spring Boot :: [39m              [2m (v3.5.5)[0;39m
+
+[2m2025-09-15T17:01:50.402+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mc.interplug.gateway.GatewayApplication  [0;39m [2m:[0;39m Starting GatewayApplication using Java 24.0.2 with PID 50559 (/Users/devgrr/interplug/practice/msa-demo/gateway/build/classes/java/main started by devgrr in /Users/devgrr/interplug/practice/msa-demo/gateway)
+[2m2025-09-15T17:01:50.403+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mc.interplug.gateway.GatewayApplication  [0;39m [2m:[0;39m The following 1 profile is active: "dev"
+[2m2025-09-15T17:01:50.422+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.c.c.c.ConfigServerConfigDataLoader  [0;39m [2m:[0;39m Fetching config from server at : http://localhost:8888
+[2m2025-09-15T17:01:50.422+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.c.c.c.ConfigServerConfigDataLoader  [0;39m [2m:[0;39m Located environment: name=gateway, profiles=[default], label=null, version=8548e4128bfad28984724815028539c5c3cac4a5, state=
+[2m2025-09-15T17:01:50.422+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.c.c.c.ConfigServerConfigDataLoader  [0;39m [2m:[0;39m Fetching config from server at : http://localhost:8888
+[2m2025-09-15T17:01:50.422+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.c.c.c.ConfigServerConfigDataLoader  [0;39m [2m:[0;39m Located environment: name=gateway, profiles=[dev], label=null, version=8548e4128bfad28984724815028539c5c3cac4a5, state=
+[2m2025-09-15T17:01:50.423+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2m2025-09-15T17:01:50.423+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2m2025-09-15T17:01:50.985+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.cloud.context.scope.GenericScope    [0;39m [2m:[0;39m BeanFactory id=0962c71b-a54e-3452-b866-12b845821b26
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::allocateMemory has been called by io.netty.util.internal.PlatformDependent0$2 (file:/Users/devgrr/.gradle/caches/modules-2/files-2.1/io.netty/netty-common/4.1.124.Final/46f22130821ee796e347b90693f61d7fc4b2e8a6/netty-common-4.1.124.Final.jar)
+WARNING: Please consider reporting this to the maintainers of class io.netty.util.internal.PlatformDependent0$2
+WARNING: sun.misc.Unsafe::allocateMemory will be removed in a future release
+[2m2025-09-15T17:01:51.198+09:00[0;39m [33m WARN[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mGatewayClassPathWarningAutoConfiguration[0;39m [2m:[0;39m 
+
+**********************************************************
+
+The artifact spring-cloud-gateway-server is deprecated. It will be removed in the next major release. Please add spring-cloud-gateway-server-webflux dependency.
+
+**********************************************************
+
+
+[2m2025-09-15T17:01:51.373+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.c.g.r.RouteDefinitionRouteLocator   [0;39m [2m:[0;39m Loaded RoutePredicateFactory [After]
+[2m2025-09-15T17:01:51.373+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.c.g.r.RouteDefinitionRouteLocator   [0;39m [2m:[0;39m Loaded RoutePredicateFactory [Before]
+[2m2025-09-15T17:01:51.373+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.c.g.r.RouteDefinitionRouteLocator   [0;39m [2m:[0;39m Loaded RoutePredicateFactory [Between]
+[2m2025-09-15T17:01:51.373+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.c.g.r.RouteDefinitionRouteLocator   [0;39m [2m:[0;39m Loaded RoutePredicateFactory [Cookie]
+[2m2025-09-15T17:01:51.373+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.c.g.r.RouteDefinitionRouteLocator   [0;39m [2m:[0;39m Loaded RoutePredicateFactory [Header]
+[2m2025-09-15T17:01:51.373+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.c.g.r.RouteDefinitionRouteLocator   [0;39m [2m:[0;39m Loaded RoutePredicateFactory [Host]
+[2m2025-09-15T17:01:51.373+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.c.g.r.RouteDefinitionRouteLocator   [0;39m [2m:[0;39m Loaded RoutePredicateFactory [Method]
+[2m2025-09-15T17:01:51.373+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.c.g.r.RouteDefinitionRouteLocator   [0;39m [2m:[0;39m Loaded RoutePredicateFactory [Path]
+[2m2025-09-15T17:01:51.373+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.c.g.r.RouteDefinitionRouteLocator   [0;39m [2m:[0;39m Loaded RoutePredicateFactory [Query]
+[2m2025-09-15T17:01:51.373+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.c.g.r.RouteDefinitionRouteLocator   [0;39m [2m:[0;39m Loaded RoutePredicateFactory [ReadBody]
+[2m2025-09-15T17:01:51.373+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.c.g.r.RouteDefinitionRouteLocator   [0;39m [2m:[0;39m Loaded RoutePredicateFactory [RemoteAddr]
+[2m2025-09-15T17:01:51.373+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.c.g.r.RouteDefinitionRouteLocator   [0;39m [2m:[0;39m Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+[2m2025-09-15T17:01:51.373+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.c.g.r.RouteDefinitionRouteLocator   [0;39m [2m:[0;39m Loaded RoutePredicateFactory [Weight]
+[2m2025-09-15T17:01:51.373+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.c.g.r.RouteDefinitionRouteLocator   [0;39m [2m:[0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+[2m2025-09-15T17:01:51.487+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.b.a.e.web.EndpointLinksResolver     [0;39m [2m:[0;39m Exposing 1 endpoint beneath base path '/actuator'
+[2m2025-09-15T17:01:51.575+09:00[0;39m [33m WARN[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m Unable to start LiveReload server
+[2m2025-09-15T17:01:51.581+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mDiscoveryClientOptionalArgsConfiguration[0;39m [2m:[0;39m Eureka HTTP Client uses RestTemplate.
+[2m2025-09-15T17:01:51.596+09:00[0;39m [33m WARN[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36ms.w.s.StarterDeprecatedAutoConfiguration[0;39m [2m:[0;39m 
+
+**********************************************************
+
+spring-cloud-starter-gateway is deprecated. It will be removed in the next major release. Please use spring-cloud-starter-gateway-server-webflux instead.
+
+**********************************************************
+
+
+[2m2025-09-15T17:01:51.599+09:00[0;39m [33m WARN[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36miguration$LoadBalancerCaffeineWarnLogger[0;39m [2m:[0;39m Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[2m2025-09-15T17:01:51.625+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.c.n.eureka.InstanceInfoFactory      [0;39m [2m:[0;39m Setting initial instance status as: STARTING
+[2m2025-09-15T17:01:51.634+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Initializing Eureka in region us-east-1
+[2m2025-09-15T17:01:51.636+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mc.n.d.s.r.aws.ConfigClusterResolver     [0;39m [2m:[0;39m Resolving eureka endpoints via configuration
+[2m2025-09-15T17:01:51.639+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Disable delta property : false
+[2m2025-09-15T17:01:51.639+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Single vip registry refresh property : null
+[2m2025-09-15T17:01:51.639+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Force full registry fetch : false
+[2m2025-09-15T17:01:51.639+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Application is null : false
+[2m2025-09-15T17:01:51.639+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Registered Applications size is zero : true
+[2m2025-09-15T17:01:51.639+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Application version is -1: true
+[2m2025-09-15T17:01:51.639+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Getting all instance registry info from the eureka server
+[2m2025-09-15T17:01:51.854+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m The response status is 200
+[2m2025-09-15T17:01:51.854+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Starting heartbeat executor: renew interval is: 30
+[2m2025-09-15T17:01:51.855+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mc.n.discovery.InstanceInfoReplicator    [0;39m [2m:[0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+[2m2025-09-15T17:01:51.856+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Discovery Client initialized at timestamp 1757923311855 with initial instances count: 0
+[2m2025-09-15T17:01:51.857+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.c.n.e.s.EurekaServiceRegistry       [0;39m [2m:[0;39m Registering application GATEWAY with eureka with status UP
+[2m2025-09-15T17:01:51.857+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Saw local status change event StatusChangeEvent [timestamp=1757923311857, current=UP, previous=STARTING]
+[2m2025-09-15T17:01:51.858+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [foReplicator-%d] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m DiscoveryClient_GATEWAY/192.0.0.2:gateway:8000: registering service...
+[2m2025-09-15T17:01:51.921+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.b.web.embedded.netty.NettyWebServer [0;39m [2m:[0;39m Netty started on port 8000 (http)
+[2m2025-09-15T17:01:51.922+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36m.s.c.n.e.s.EurekaAutoServiceRegistration[0;39m [2m:[0;39m Updating port to 8000
+[2m2025-09-15T17:01:51.940+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mc.interplug.gateway.GatewayApplication  [0;39m [2m:[0;39m Started GatewayApplication in 7.575 seconds (process running for 7.864)
+[2m2025-09-15T17:01:51.942+09:00[0;39m [33m WARN[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mServerWebfluxPropertiesMigrationListener[0;39m [2m:[0;39m 
+The use of configuration keys that have been renamed was found in the environment:
+
+Property source 'configserver:git@github.com:nalpari/config-server.git/config-file/gateway-dev.yml':
+	Key: spring.cloud.gateway.routes[0].id
+		Replacement: spring.cloud.gateway.server.webflux.routes[0].id
+	Key: spring.cloud.gateway.routes[0].uri
+		Replacement: spring.cloud.gateway.server.webflux.routes[0].uri
+	Key: spring.cloud.gateway.routes[0].predicates[0]
+		Replacement: spring.cloud.gateway.server.webflux.routes[0].predicates[0]
+	Key: spring.cloud.gateway.routes[1].id
+		Replacement: spring.cloud.gateway.server.webflux.routes[1].id
+	Key: spring.cloud.gateway.routes[1].uri
+		Replacement: spring.cloud.gateway.server.webflux.routes[1].uri
+	Key: spring.cloud.gateway.routes[1].predicates[0]
+		Replacement: spring.cloud.gateway.server.webflux.routes[1].predicates[0]
+	Key: spring.cloud.gateway.routes[2].id
+		Replacement: spring.cloud.gateway.server.webflux.routes[2].id
+	Key: spring.cloud.gateway.routes[2].uri
+		Replacement: spring.cloud.gateway.server.webflux.routes[2].uri
+	Key: spring.cloud.gateway.routes[2].predicates[0]
+		Replacement: spring.cloud.gateway.server.webflux.routes[2].predicates[0]
+	Key: spring.cloud.gateway.routes[2].filters[0].name
+		Replacement: spring.cloud.gateway.server.webflux.routes[2].filters[0].name
+	Key: spring.cloud.gateway.routes[3].id
+		Replacement: spring.cloud.gateway.server.webflux.routes[3].id
+	Key: spring.cloud.gateway.routes[3].uri
+		Replacement: spring.cloud.gateway.server.webflux.routes[3].uri
+	Key: spring.cloud.gateway.routes[3].predicates[0]
+		Replacement: spring.cloud.gateway.server.webflux.routes[3].predicates[0]
+
+
+Each configuration key has been temporarily mapped to its replacement for your convenience. To silence this warning, please update your configuration to use the new keys.
+
+[2m2025-09-15T17:01:51.942+09:00[0;39m [33m WARN[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.b.c.p.m.PropertiesMigrationListener [0;39m [2m:[0;39m 
+The use of configuration keys that have been renamed was found in the environment:
+
+Property source 'configserver:git@github.com:nalpari/config-server.git/config-file/gateway-dev.yml':
+	Key: spring.cloud.gateway.globalcors.cors-configurations[/**].allowedorigins
+		Replacement: spring.cloud.gateway.server.webflux.globalcors.cors-configurations[/**].allowedorigins
+	Key: spring.cloud.gateway.globalcors.cors-configurations[/**].allowedmethods[0]
+		Replacement: spring.cloud.gateway.server.webflux.globalcors.cors-configurations[/**].allowedmethods[0]
+	Key: spring.cloud.gateway.globalcors.cors-configurations[/**].allowedmethods[1]
+		Replacement: spring.cloud.gateway.server.webflux.globalcors.cors-configurations[/**].allowedmethods[1]
+	Key: spring.cloud.gateway.globalcors.cors-configurations[/**].allowedmethods[2]
+		Replacement: spring.cloud.gateway.server.webflux.globalcors.cors-configurations[/**].allowedmethods[2]
+	Key: spring.cloud.gateway.globalcors.cors-configurations[/**].allowedmethods[3]
+		Replacement: spring.cloud.gateway.server.webflux.globalcors.cors-configurations[/**].allowedmethods[3]
+	Key: spring.cloud.gateway.globalcors.cors-configurations[/**].allowedmethods[4]
+		Replacement: spring.cloud.gateway.server.webflux.globalcors.cors-configurations[/**].allowedmethods[4]
+	Key: spring.cloud.gateway.globalcors.cors-configurations[/**].allowedheaders
+		Replacement: spring.cloud.gateway.server.webflux.globalcors.cors-configurations[/**].allowedheaders
+	Key: spring.cloud.gateway.globalcors.cors-configurations[/**].allow-credentials
+		Replacement: spring.cloud.gateway.server.webflux.globalcors.cors-configurations[/**].allow-credentials
+
+
+Each configuration key has been temporarily mapped to its replacement for your convenience. To silence this warning, please update your configuration to use the new keys.
+
+[2m2025-09-15T17:01:51.972+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [foReplicator-%d] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m DiscoveryClient_GATEWAY/192.0.0.2:gateway:8000 - registration status: 204
+[2m2025-09-15T17:02:21.859+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [reshExecutor-%d] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Disable delta property : false
+[2m2025-09-15T17:02:21.860+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [reshExecutor-%d] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Single vip registry refresh property : null
+[2m2025-09-15T17:02:21.860+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [reshExecutor-%d] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Force full registry fetch : false
+[2m2025-09-15T17:02:21.860+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [reshExecutor-%d] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Application is null : false
+[2m2025-09-15T17:02:21.860+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [reshExecutor-%d] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Registered Applications size is zero : true
+[2m2025-09-15T17:02:21.860+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [reshExecutor-%d] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Application version is -1: false
+[2m2025-09-15T17:02:21.860+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [reshExecutor-%d] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Getting all instance registry info from the eureka server
+[2m2025-09-15T17:02:21.968+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [reshExecutor-%d] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m The response status is 200
+[2m2025-09-15T17:02:56.943+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [   File Watcher] [0;39m[36mrtingClassPathChangeChangedEventListener[0;39m [2m:[0;39m Restarting due to 13 class path changes (0 additions, 0 deletions, 13 modifications)
+[2m2025-09-15T17:02:56.945+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [       Thread-1] [0;39m[36mo.s.c.n.e.s.EurekaServiceRegistry       [0;39m [2m:[0;39m Unregistering application GATEWAY with eureka with status DOWN
+[2m2025-09-15T17:02:56.945+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [       Thread-1] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Saw local status change event StatusChangeEvent [timestamp=1757923376945, current=DOWN, previous=UP]
+[2m2025-09-15T17:02:56.945+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [foReplicator-%d] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m DiscoveryClient_GATEWAY/192.0.0.2:gateway:8000: registering service...
+[2m2025-09-15T17:02:56.947+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [       Thread-1] [0;39m[36mo.s.b.w.embedded.netty.GracefulShutdown [0;39m [2m:[0;39m Commencing graceful shutdown. Waiting for active requests to complete
+[2m2025-09-15T17:02:56.948+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [ netty-shutdown] [0;39m[36mo.s.b.w.embedded.netty.GracefulShutdown [0;39m [2m:[0;39m Graceful shutdown complete
+[2m2025-09-15T17:02:56.958+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [       Thread-1] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Shutting down DiscoveryClient ...
+[2m2025-09-15T17:02:57.044+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [foReplicator-%d] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m DiscoveryClient_GATEWAY/192.0.0.2:gateway:8000 - registration status: 204
+[2m2025-09-15T17:02:57.044+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [       Thread-1] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Unregistering ...
+[2m2025-09-15T17:02:57.148+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [       Thread-1] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m DiscoveryClient_GATEWAY/192.0.0.2:gateway:8000 - deregister  status: 200
+[2m2025-09-15T17:02:57.148+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [       Thread-1] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Completed shut down of DiscoveryClient
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+[32m :: Spring Boot :: [39m              [2m (v3.5.5)[0;39m
+
+[2m2025-09-15T17:03:07.279+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mc.interplug.gateway.GatewayApplication  [0;39m [2m:[0;39m Starting GatewayApplication using Java 24.0.2 with PID 50559 (/Users/devgrr/interplug/practice/msa-demo/gateway/build/classes/java/main started by devgrr in /Users/devgrr/interplug/practice/msa-demo/gateway)
+[2m2025-09-15T17:03:07.279+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mc.interplug.gateway.GatewayApplication  [0;39m [2m:[0;39m The following 1 profile is active: "dev"
+[2m2025-09-15T17:03:07.280+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.c.c.c.ConfigServerConfigDataLoader  [0;39m [2m:[0;39m Fetching config from server at : http://localhost:8888
+[2m2025-09-15T17:03:07.280+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.c.c.c.ConfigServerConfigDataLoader  [0;39m [2m:[0;39m Located environment: name=gateway, profiles=[default], label=null, version=8548e4128bfad28984724815028539c5c3cac4a5, state=
+[2m2025-09-15T17:03:07.280+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.c.c.c.ConfigServerConfigDataLoader  [0;39m [2m:[0;39m Fetching config from server at : http://localhost:8888
+[2m2025-09-15T17:03:07.280+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.c.c.c.ConfigServerConfigDataLoader  [0;39m [2m:[0;39m Located environment: name=gateway, profiles=[dev], label=null, version=8548e4128bfad28984724815028539c5c3cac4a5, state=
+[2m2025-09-15T17:03:07.487+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.cloud.context.scope.GenericScope    [0;39m [2m:[0;39m BeanFactory id=0962c71b-a54e-3452-b866-12b845821b26
+[2m2025-09-15T17:03:07.526+09:00[0;39m [33m WARN[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mGatewayClassPathWarningAutoConfiguration[0;39m [2m:[0;39m 
+
+**********************************************************
+
+The artifact spring-cloud-gateway-server is deprecated. It will be removed in the next major release. Please add spring-cloud-gateway-server-webflux dependency.
+
+**********************************************************
+
+
+[2m2025-09-15T17:03:07.561+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.c.g.r.RouteDefinitionRouteLocator   [0;39m [2m:[0;39m Loaded RoutePredicateFactory [After]
+[2m2025-09-15T17:03:07.561+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.c.g.r.RouteDefinitionRouteLocator   [0;39m [2m:[0;39m Loaded RoutePredicateFactory [Before]
+[2m2025-09-15T17:03:07.562+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.c.g.r.RouteDefinitionRouteLocator   [0;39m [2m:[0;39m Loaded RoutePredicateFactory [Between]
+[2m2025-09-15T17:03:07.562+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.c.g.r.RouteDefinitionRouteLocator   [0;39m [2m:[0;39m Loaded RoutePredicateFactory [Cookie]
+[2m2025-09-15T17:03:07.562+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.c.g.r.RouteDefinitionRouteLocator   [0;39m [2m:[0;39m Loaded RoutePredicateFactory [Header]
+[2m2025-09-15T17:03:07.562+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.c.g.r.RouteDefinitionRouteLocator   [0;39m [2m:[0;39m Loaded RoutePredicateFactory [Host]
+[2m2025-09-15T17:03:07.562+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.c.g.r.RouteDefinitionRouteLocator   [0;39m [2m:[0;39m Loaded RoutePredicateFactory [Method]
+[2m2025-09-15T17:03:07.562+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.c.g.r.RouteDefinitionRouteLocator   [0;39m [2m:[0;39m Loaded RoutePredicateFactory [Path]
+[2m2025-09-15T17:03:07.562+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.c.g.r.RouteDefinitionRouteLocator   [0;39m [2m:[0;39m Loaded RoutePredicateFactory [Query]
+[2m2025-09-15T17:03:07.562+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.c.g.r.RouteDefinitionRouteLocator   [0;39m [2m:[0;39m Loaded RoutePredicateFactory [ReadBody]
+[2m2025-09-15T17:03:07.562+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.c.g.r.RouteDefinitionRouteLocator   [0;39m [2m:[0;39m Loaded RoutePredicateFactory [RemoteAddr]
+[2m2025-09-15T17:03:07.562+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.c.g.r.RouteDefinitionRouteLocator   [0;39m [2m:[0;39m Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+[2m2025-09-15T17:03:07.562+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.c.g.r.RouteDefinitionRouteLocator   [0;39m [2m:[0;39m Loaded RoutePredicateFactory [Weight]
+[2m2025-09-15T17:03:07.562+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.c.g.r.RouteDefinitionRouteLocator   [0;39m [2m:[0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+[2m2025-09-15T17:03:07.601+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.b.a.e.web.EndpointLinksResolver     [0;39m [2m:[0;39m Exposing 1 endpoint beneath base path '/actuator'
+[2m2025-09-15T17:03:07.622+09:00[0;39m [33m WARN[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m Unable to start LiveReload server
+[2m2025-09-15T17:03:07.624+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mDiscoveryClientOptionalArgsConfiguration[0;39m [2m:[0;39m Eureka HTTP Client uses RestTemplate.
+[2m2025-09-15T17:03:07.628+09:00[0;39m [33m WARN[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36ms.w.s.StarterDeprecatedAutoConfiguration[0;39m [2m:[0;39m 
+
+**********************************************************
+
+spring-cloud-starter-gateway is deprecated. It will be removed in the next major release. Please use spring-cloud-starter-gateway-server-webflux instead.
+
+**********************************************************
+
+
+[2m2025-09-15T17:03:07.628+09:00[0;39m [33m WARN[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36miguration$LoadBalancerCaffeineWarnLogger[0;39m [2m:[0;39m Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[2m2025-09-15T17:03:07.635+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.c.n.eureka.InstanceInfoFactory      [0;39m [2m:[0;39m Setting initial instance status as: STARTING
+[2m2025-09-15T17:03:07.636+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Initializing Eureka in region us-east-1
+[2m2025-09-15T17:03:07.636+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mc.n.d.s.r.aws.ConfigClusterResolver     [0;39m [2m:[0;39m Resolving eureka endpoints via configuration
+[2m2025-09-15T17:03:07.636+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Disable delta property : false
+[2m2025-09-15T17:03:07.636+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Single vip registry refresh property : null
+[2m2025-09-15T17:03:07.636+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Force full registry fetch : false
+[2m2025-09-15T17:03:07.636+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Application is null : false
+[2m2025-09-15T17:03:07.636+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Registered Applications size is zero : true
+[2m2025-09-15T17:03:07.636+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Application version is -1: true
+[2m2025-09-15T17:03:07.636+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Getting all instance registry info from the eureka server
+[2m2025-09-15T17:03:07.740+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m The response status is 200
+[2m2025-09-15T17:03:07.741+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Starting heartbeat executor: renew interval is: 30
+[2m2025-09-15T17:03:07.741+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mc.n.discovery.InstanceInfoReplicator    [0;39m [2m:[0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+[2m2025-09-15T17:03:07.741+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Discovery Client initialized at timestamp 1757923387741 with initial instances count: 0
+[2m2025-09-15T17:03:07.741+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.c.n.e.s.EurekaServiceRegistry       [0;39m [2m:[0;39m Registering application GATEWAY with eureka with status UP
+[2m2025-09-15T17:03:07.741+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Saw local status change event StatusChangeEvent [timestamp=1757923387741, current=UP, previous=STARTING]
+[2m2025-09-15T17:03:07.741+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [foReplicator-%d] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m DiscoveryClient_GATEWAY/192.0.0.2:gateway:8000: registering service...
+[2m2025-09-15T17:03:07.751+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.c.n.e.s.EurekaServiceRegistry       [0;39m [2m:[0;39m Unregistering application GATEWAY with eureka with status DOWN
+[2m2025-09-15T17:03:07.751+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Saw local status change event StatusChangeEvent [timestamp=1757923387751, current=DOWN, previous=UP]
+[2m2025-09-15T17:03:07.751+09:00[0;39m [33m WARN[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36monfigReactiveWebServerApplicationContext[0;39m [2m:[0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+[2m2025-09-15T17:03:07.753+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Shutting down DiscoveryClient ...
+[2m2025-09-15T17:03:07.841+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [foReplicator-%d] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m DiscoveryClient_GATEWAY/192.0.0.2:gateway:8000 - registration status: 204
+[2m2025-09-15T17:03:07.841+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [foReplicator-%d] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m DiscoveryClient_GATEWAY/192.0.0.2:gateway:8000: registering service...
+[2m2025-09-15T17:03:07.938+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [foReplicator-%d] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m DiscoveryClient_GATEWAY/192.0.0.2:gateway:8000 - registration status: 204
+[2m2025-09-15T17:03:07.938+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Unregistering ...
+[2m2025-09-15T17:03:08.034+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m DiscoveryClient_GATEWAY/192.0.0.2:gateway:8000 - deregister  status: 200
+[2m2025-09-15T17:03:08.034+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Completed shut down of DiscoveryClient
+[2m2025-09-15T17:03:08.035+09:00[0;39m [33m WARN[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mServerWebfluxPropertiesMigrationListener[0;39m [2m:[0;39m 
+The use of configuration keys that have been renamed was found in the environment:
+
+Property source 'configserver:git@github.com:nalpari/config-server.git/config-file/gateway-dev.yml':
+	Key: spring.cloud.gateway.routes[0].id
+		Replacement: spring.cloud.gateway.server.webflux.routes[0].id
+	Key: spring.cloud.gateway.routes[0].uri
+		Replacement: spring.cloud.gateway.server.webflux.routes[0].uri
+	Key: spring.cloud.gateway.routes[0].predicates[0]
+		Replacement: spring.cloud.gateway.server.webflux.routes[0].predicates[0]
+	Key: spring.cloud.gateway.routes[1].id
+		Replacement: spring.cloud.gateway.server.webflux.routes[1].id
+	Key: spring.cloud.gateway.routes[1].uri
+		Replacement: spring.cloud.gateway.server.webflux.routes[1].uri
+	Key: spring.cloud.gateway.routes[1].predicates[0]
+		Replacement: spring.cloud.gateway.server.webflux.routes[1].predicates[0]
+	Key: spring.cloud.gateway.routes[2].id
+		Replacement: spring.cloud.gateway.server.webflux.routes[2].id
+	Key: spring.cloud.gateway.routes[2].uri
+		Replacement: spring.cloud.gateway.server.webflux.routes[2].uri
+	Key: spring.cloud.gateway.routes[2].predicates[0]
+		Replacement: spring.cloud.gateway.server.webflux.routes[2].predicates[0]
+	Key: spring.cloud.gateway.routes[2].filters[0].name
+		Replacement: spring.cloud.gateway.server.webflux.routes[2].filters[0].name
+	Key: spring.cloud.gateway.routes[3].id
+		Replacement: spring.cloud.gateway.server.webflux.routes[3].id
+	Key: spring.cloud.gateway.routes[3].uri
+		Replacement: spring.cloud.gateway.server.webflux.routes[3].uri
+	Key: spring.cloud.gateway.routes[3].predicates[0]
+		Replacement: spring.cloud.gateway.server.webflux.routes[3].predicates[0]
+
+
+Each configuration key has been temporarily mapped to its replacement for your convenience. To silence this warning, please update your configuration to use the new keys.
+
+[2m2025-09-15T17:03:08.036+09:00[0;39m [33m WARN[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.b.c.p.m.PropertiesMigrationListener [0;39m [2m:[0;39m 
+The use of configuration keys that have been renamed was found in the environment:
+
+Property source 'configserver:git@github.com:nalpari/config-server.git/config-file/gateway-dev.yml':
+	Key: spring.cloud.gateway.globalcors.cors-configurations[/**].allowedorigins
+		Replacement: spring.cloud.gateway.server.webflux.globalcors.cors-configurations[/**].allowedorigins
+	Key: spring.cloud.gateway.globalcors.cors-configurations[/**].allowedmethods[0]
+		Replacement: spring.cloud.gateway.server.webflux.globalcors.cors-configurations[/**].allowedmethods[0]
+	Key: spring.cloud.gateway.globalcors.cors-configurations[/**].allowedmethods[1]
+		Replacement: spring.cloud.gateway.server.webflux.globalcors.cors-configurations[/**].allowedmethods[1]
+	Key: spring.cloud.gateway.globalcors.cors-configurations[/**].allowedmethods[2]
+		Replacement: spring.cloud.gateway.server.webflux.globalcors.cors-configurations[/**].allowedmethods[2]
+	Key: spring.cloud.gateway.globalcors.cors-configurations[/**].allowedmethods[3]
+		Replacement: spring.cloud.gateway.server.webflux.globalcors.cors-configurations[/**].allowedmethods[3]
+	Key: spring.cloud.gateway.globalcors.cors-configurations[/**].allowedmethods[4]
+		Replacement: spring.cloud.gateway.server.webflux.globalcors.cors-configurations[/**].allowedmethods[4]
+	Key: spring.cloud.gateway.globalcors.cors-configurations[/**].allowedheaders
+		Replacement: spring.cloud.gateway.server.webflux.globalcors.cors-configurations[/**].allowedheaders
+	Key: spring.cloud.gateway.globalcors.cors-configurations[/**].allow-credentials
+		Replacement: spring.cloud.gateway.server.webflux.globalcors.cors-configurations[/**].allow-credentials
+
+
+Each configuration key has been temporarily mapped to its replacement for your convenience. To silence this warning, please update your configuration to use the new keys.
+
+[2m2025-09-15T17:03:08.041+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36m.s.b.a.l.ConditionEvaluationReportLogger[0;39m [2m:[0;39m 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[2m2025-09-15T17:03:08.049+09:00[0;39m [31mERROR[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.b.d.LoggingFailureAnalysisReporter  [0;39m [2m:[0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8000 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8000 or configure this application to listen on another port.
+
+
+Daemon will be stopped at the end of the build stop command received
+
+> Task :bootRun
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+[32m :: Spring Boot :: [39m              [2m (v3.5.5)[0;39m
+
+[2m2025-09-16T12:21:24.494+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mc.interplug.gateway.GatewayApplication  [0;39m [2m:[0;39m Starting GatewayApplication using Java 24.0.2 with PID 50559 (/Users/devgrr/interplug/practice/msa-demo/gateway/build/classes/java/main started by devgrr in /Users/devgrr/interplug/practice/msa-demo/gateway)
+[2m2025-09-16T12:21:24.494+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mc.interplug.gateway.GatewayApplication  [0;39m [2m:[0;39m The following 1 profile is active: "dev"
+[2m2025-09-16T12:21:24.495+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.c.c.c.ConfigServerConfigDataLoader  [0;39m [2m:[0;39m Fetching config from server at : http://localhost:8888
+[2m2025-09-16T12:21:24.495+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.c.c.c.ConfigServerConfigDataLoader  [0;39m [2m:[0;39m Located environment: name=gateway, profiles=[default], label=null, version=9fb4c6bf2207f6c22f224a1ff110c151484ba125, state=
+[2m2025-09-16T12:21:24.495+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.c.c.c.ConfigServerConfigDataLoader  [0;39m [2m:[0;39m Fetching config from server at : http://localhost:8888
+[2m2025-09-16T12:21:24.495+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.c.c.c.ConfigServerConfigDataLoader  [0;39m [2m:[0;39m Located environment: name=gateway, profiles=[dev], label=null, version=9fb4c6bf2207f6c22f224a1ff110c151484ba125, state=
+[2m2025-09-16T12:21:24.719+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.cloud.context.scope.GenericScope    [0;39m [2m:[0;39m BeanFactory id=3c7d6f44-e41a-39fd-85f8-3e1f45df3391
+[2m2025-09-16T12:21:24.764+09:00[0;39m [33m WARN[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mGatewayClassPathWarningAutoConfiguration[0;39m [2m:[0;39m 
+
+**********************************************************
+
+The artifact spring-cloud-gateway-server is deprecated. It will be removed in the next major release. Please add spring-cloud-gateway-server-webflux dependency.
+
+**********************************************************
+
+
+[2m2025-09-16T12:21:24.802+09:00[0;39m [33m WARN[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36monfigReactiveWebServerApplicationContext[0;39m [2m:[0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'nettyWriteResponseFilter' defined in class path resource [org/springframework/cloud/gateway/config/GatewayAutoConfiguration$NettyConfiguration.class]: Unsatisfied dependency expressed through method 'nettyWriteResponseFilter' parameter 0: Error creating bean with name 'gatewayProperties': Could not bind properties to 'GatewayProperties' : prefix=spring.cloud.gateway.server.webflux, ignoreInvalidFields=false, ignoreUnknownFields=true
+[2m2025-09-16T12:21:24.803+09:00[0;39m [33m WARN[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mServerWebfluxPropertiesMigrationListener[0;39m [2m:[0;39m 
+The use of configuration keys that have been renamed was found in the environment:
+
+Property source 'configserver:git@github.com:nalpari/config-server.git/config-file/gateway-dev.yml':
+	Key: spring.cloud.gateway.routes[0].id
+		Replacement: spring.cloud.gateway.server.webflux.routes[0].id
+	Key: spring.cloud.gateway.routes[0].url
+		Replacement: spring.cloud.gateway.server.webflux.routes[0].url
+	Key: spring.cloud.gateway.routes[0].predicates[0]
+		Replacement: spring.cloud.gateway.server.webflux.routes[0].predicates[0]
+	Key: spring.cloud.gateway.routes[1].id
+		Replacement: spring.cloud.gateway.server.webflux.routes[1].id
+	Key: spring.cloud.gateway.routes[1].uri
+		Replacement: spring.cloud.gateway.server.webflux.routes[1].uri
+	Key: spring.cloud.gateway.routes[1].predicates[0]
+		Replacement: spring.cloud.gateway.server.webflux.routes[1].predicates[0]
+	Key: spring.cloud.gateway.routes[2].id
+		Replacement: spring.cloud.gateway.server.webflux.routes[2].id
+	Key: spring.cloud.gateway.routes[2].uri
+		Replacement: spring.cloud.gateway.server.webflux.routes[2].uri
+	Key: spring.cloud.gateway.routes[2].predicates[0]
+		Replacement: spring.cloud.gateway.server.webflux.routes[2].predicates[0]
+	Key: spring.cloud.gateway.routes[3].id
+		Replacement: spring.cloud.gateway.server.webflux.routes[3].id
+	Key: spring.cloud.gateway.routes[3].uri
+		Replacement: spring.cloud.gateway.server.webflux.routes[3].uri
+	Key: spring.cloud.gateway.routes[3].predicates[0]
+		Replacement: spring.cloud.gateway.server.webflux.routes[3].predicates[0]
+	Key: spring.cloud.gateway.routes[3].filters[0].name
+		Replacement: spring.cloud.gateway.server.webflux.routes[3].filters[0].name
+	Key: spring.cloud.gateway.routes[4].id
+		Replacement: spring.cloud.gateway.server.webflux.routes[4].id
+	Key: spring.cloud.gateway.routes[4].uri
+		Replacement: spring.cloud.gateway.server.webflux.routes[4].uri
+	Key: spring.cloud.gateway.routes[4].predicates[0]
+		Replacement: spring.cloud.gateway.server.webflux.routes[4].predicates[0]
+
+Property source 'Config resource 'class path resource [application.yml]' via location 'optional:classpath:/'':
+	Key: spring.cloud.gateway.routes[0].id
+		Line: 15
+		Replacement: spring.cloud.gateway.server.webflux.routes[0].id
+	Key: spring.cloud.gateway.routes[0].uri
+		Line: 16
+		Replacement: spring.cloud.gateway.server.webflux.routes[0].uri
+	Key: spring.cloud.gateway.routes[0].predicates[0]
+		Line: 18
+		Replacement: spring.cloud.gateway.server.webflux.routes[0].predicates[0]
+
+
+Each configuration key has been temporarily mapped to its replacement for your convenience. To silence this warning, please update your configuration to use the new keys.
+
+[2m2025-09-16T12:21:24.803+09:00[0;39m [33m WARN[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.b.c.p.m.PropertiesMigrationListener [0;39m [2m:[0;39m 
+The use of configuration keys that have been renamed was found in the environment:
+
+Property source 'configserver:git@github.com:nalpari/config-server.git/config-file/gateway-dev.yml':
+	Key: spring.cloud.gateway.discovery.locator.enabled
+		Replacement: spring.cloud.gateway.server.webflux.discovery.locator.enabled
+	Key: spring.cloud.gateway.discovery.locator.lower-case-service-id
+		Replacement: spring.cloud.gateway.server.webflux.discovery.locator.lower-case-service-id
+	Key: spring.cloud.gateway.globalcors.cors-configurations[/**].allowedorigins
+		Replacement: spring.cloud.gateway.server.webflux.globalcors.cors-configurations[/**].allowedorigins
+	Key: spring.cloud.gateway.globalcors.cors-configurations[/**].allowedmethods[0]
+		Replacement: spring.cloud.gateway.server.webflux.globalcors.cors-configurations[/**].allowedmethods[0]
+	Key: spring.cloud.gateway.globalcors.cors-configurations[/**].allowedmethods[1]
+		Replacement: spring.cloud.gateway.server.webflux.globalcors.cors-configurations[/**].allowedmethods[1]
+	Key: spring.cloud.gateway.globalcors.cors-configurations[/**].allowedmethods[2]
+		Replacement: spring.cloud.gateway.server.webflux.globalcors.cors-configurations[/**].allowedmethods[2]
+	Key: spring.cloud.gateway.globalcors.cors-configurations[/**].allowedmethods[3]
+		Replacement: spring.cloud.gateway.server.webflux.globalcors.cors-configurations[/**].allowedmethods[3]
+	Key: spring.cloud.gateway.globalcors.cors-configurations[/**].allowedmethods[4]
+		Replacement: spring.cloud.gateway.server.webflux.globalcors.cors-configurations[/**].allowedmethods[4]
+	Key: spring.cloud.gateway.globalcors.cors-configurations[/**].allowedheaders
+		Replacement: spring.cloud.gateway.server.webflux.globalcors.cors-configurations[/**].allowedheaders
+	Key: spring.cloud.gateway.globalcors.cors-configurations[/**].allow-credentials
+		Replacement: spring.cloud.gateway.server.webflux.globalcors.cors-configurations[/**].allow-credentials
+
+Property source 'Config resource 'class path resource [application.yml]' via location 'optional:classpath:/'':
+	Key: spring.cloud.gateway.discovery.locator.enabled
+		Line: 12
+		Replacement: spring.cloud.gateway.server.webflux.discovery.locator.enabled
+	Key: spring.cloud.gateway.discovery.locator.lower-case-service-id
+		Line: 13
+		Replacement: spring.cloud.gateway.server.webflux.discovery.locator.lower-case-service-id
+
+
+Each configuration key has been temporarily mapped to its replacement for your convenience. To silence this warning, please update your configuration to use the new keys.
+
+[2m2025-09-16T12:21:24.812+09:00[0;39m [32m INFO[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36m.s.b.a.l.ConditionEvaluationReportLogger[0;39m [2m:[0;39m 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[2m2025-09-16T12:21:24.814+09:00[0;39m [31mERROR[0;39m [35m50559[0;39m [2m--- [gateway] [  restartedMain] [0;39m[36mo.s.b.d.LoggingFailureAnalysisReporter  [0;39m [2m:[0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Binding to target org.springframework.cloud.gateway.config.GatewayProperties failed:
+
+    Property: spring.cloud.gateway.server.webflux.routes[0].uri
+    Value: "null"
+    Reason: 널이어서는 안됩니다
+
+
+Action:
+
+Update your application's configuration
+
+
+Timed out waiting for finished message from client socket connection from /127.0.0.1:51348 to /127.0.0.1:63169. Discarding connection.
+Timed out waiting for finished message from client socket connection from /127.0.0.1:51348 to /127.0.0.1:49783. Discarding connection.
+Timed out waiting for finished message from client socket connection from /127.0.0.1:51348 to /127.0.0.1:49786. Discarding connection.
+
+> Task :bootRun
+Exception in thread "restartedMain" java.lang.UnsupportedClassVersionError: com/interplug/gateway/GatewayApplication has been compiled by a more recent version of the Java Runtime (class file version 69.0), this version of the Java Runtime only recognizes class file versions up to 68.0
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:962)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:132)
+	at java.base/java.net.URLClassLoader.defineClass(URLClassLoader.java:426)
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:339)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.findClass(RestartClassLoader.java:136)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:118)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:543)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:47)
