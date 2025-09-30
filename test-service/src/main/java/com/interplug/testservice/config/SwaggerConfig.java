@@ -20,17 +20,17 @@ public class SwaggerConfig {
                         .name("DevGrr")
                         .email("devgrr@interplug.com"));
 
-        Server localServer = new Server()
-                .url("http://localhost:8080/test-service")
-                .description("Gateway를 통한 접근");
+        Server currentServer = new Server()
+                .url("/")
+                .description("Current Server (Dynamic Port)");
 
-        Server directServer = new Server()
-                .url("http://localhost:0")
-                .description("직접 서비스 접근 (랜덤 포트)");
+        Server gatewayServer = new Server()
+                .url("http://localhost:8000")
+                .description("Via API Gateway");
 
         return new OpenAPI()
                 .info(info)
-                .addServersItem(localServer)
-                .addServersItem(directServer);
+                .addServersItem(currentServer)
+                .addServersItem(gatewayServer);
     }
 }

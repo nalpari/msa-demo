@@ -2,6 +2,11 @@
 
 이 파일은 Claude Code (claude.ai/code)가 이 저장소에서 작업할 때 가이드를 제공합니다.
 
+## 메모
+- 모든 답변과 추론과정은 한글로 해주세요.
+- 지시한 내용만 정확히 수행해 주세요. 쓸데없이 추가하지 마세요.
+- msa-demo 프로젝트는 빌드 및 서버 실행 체크 하지 않는다.
+
 ## 프로젝트 개요
 
 Java 24, Spring Boot 3.5.5, Spring Cloud 2025.0.0으로 구축된 마이크로서비스 데모 프로젝트
@@ -24,6 +29,11 @@ Java 24, Spring Boot 3.5.5, Spring Cloud 2025.0.0으로 구축된 마이크로�
 
 4. **test-service** (랜덤 포트)
    - H2 인메모리 DB 사용 샘플 서비스
+
+5. **bpmaster-manage-service** (랜덤 포트)
+   - Kotlin 기반 반응형 마이크로서비스
+   - PostgreSQL R2DBC (반응형 DB 드라이버)
+   - WebFlux, Resilience4j Circuit Breaker
 
 ## 주요 명령어
 

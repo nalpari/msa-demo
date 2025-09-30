@@ -1,0 +1,75 @@
+2025-09-30 09:14:30.553 [Test worker] INFO  c.i.b.BpmasterManageServiceApplicationTests - Starting BpmasterManageServiceApplicationTests using Java 21.0.7 with PID 2498 (started by devgrr in /Users/devgrr/interplug/practice/msa-demo/bpmaster-manage-service)
+2025-09-30 09:14:30.554 [Test worker] DEBUG c.i.b.BpmasterManageServiceApplicationTests - Running with Spring Boot v3.5.5, Spring v6.2.10
+2025-09-30 09:14:30.555 [Test worker] INFO  c.i.b.BpmasterManageServiceApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-09-30 09:14:30.903 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-09-30 09:14:30.968 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 62 ms. Found 6 R2DBC repository interfaces.
+2025-09-30 09:14:31.409 [Test worker] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d9491122-7fd5-3241-ba27-706d384d422c
+2025-09-30 09:14:31.520 [Test worker] DEBUG io.r2dbc.postgresql.Extensions - Discovering Extensions using ServiceLoader
+2025-09-30 09:14:31.521 [Test worker] DEBUG io.r2dbc.postgresql.Extensions - Registering extension io.r2dbc.postgresql.codec.BuiltinDynamicCodecs
+2025-09-30 09:14:32.056 [Test worker] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 4 endpoints beneath base path '/actuator'
+2025-09-30 09:14:32.111 [Test worker] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-09-30 09:14:32.340 [Test worker] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-09-30 09:14:32.358 [Test worker] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-09-30 09:14:32.393 [Test worker] INFO  c.i.b.BpmasterManageServiceApplicationTests - Started BpmasterManageServiceApplicationTests in 2.013 seconds (process running for 2.651)
+2025-09-30 09:14:32.791 [SpringApplicationShutdownHook] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-09-30 09:14:32.792 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application BPMASTER-MANAGE-SERVICE with eureka with status DOWN
+2025-09-30 09:15:55.916 [Test worker] INFO  c.i.b.BpmasterManageServiceApplicationTests - Starting BpmasterManageServiceApplicationTests using Java 21.0.7 with PID 2848 (started by devgrr in /Users/devgrr/interplug/practice/msa-demo/bpmaster-manage-service)
+2025-09-30 09:15:55.917 [Test worker] DEBUG c.i.b.BpmasterManageServiceApplicationTests - Running with Spring Boot v3.5.5, Spring v6.2.10
+2025-09-30 09:15:55.917 [Test worker] INFO  c.i.b.BpmasterManageServiceApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-09-30 09:15:56.286 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-09-30 09:15:56.353 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 64 ms. Found 6 R2DBC repository interfaces.
+2025-09-30 09:15:56.818 [Test worker] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d9491122-7fd5-3241-ba27-706d384d422c
+2025-09-30 09:15:56.980 [Test worker] DEBUG io.r2dbc.postgresql.Extensions - Discovering Extensions using ServiceLoader
+2025-09-30 09:15:56.981 [Test worker] DEBUG io.r2dbc.postgresql.Extensions - Registering extension io.r2dbc.postgresql.codec.BuiltinDynamicCodecs
+2025-09-30 09:15:57.732 [Test worker] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 4 endpoints beneath base path '/actuator'
+2025-09-30 09:15:57.821 [Test worker] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-09-30 09:15:58.157 [Test worker] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-09-30 09:15:58.208 [Test worker] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-09-30 09:15:58.278 [Test worker] INFO  c.i.b.BpmasterManageServiceApplicationTests - Started BpmasterManageServiceApplicationTests in 2.539 seconds (process running for 3.139)
+2025-09-30 09:15:58.776 [SpringApplicationShutdownHook] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-09-30 09:15:58.777 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application BPMASTER-MANAGE-SERVICE with eureka with status DOWN
+2025-09-30 09:16:06.134 [Test worker] INFO  c.i.b.BpmasterManageServiceApplicationTests - Starting BpmasterManageServiceApplicationTests using Java 21.0.7 with PID 2910 (started by devgrr in /Users/devgrr/interplug/practice/msa-demo/bpmaster-manage-service)
+2025-09-30 09:16:06.135 [Test worker] DEBUG c.i.b.BpmasterManageServiceApplicationTests - Running with Spring Boot v3.5.5, Spring v6.2.10
+2025-09-30 09:16:06.136 [Test worker] INFO  c.i.b.BpmasterManageServiceApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-09-30 09:16:06.542 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-09-30 09:16:06.620 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 74 ms. Found 6 R2DBC repository interfaces.
+2025-09-30 09:16:07.122 [Test worker] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d9491122-7fd5-3241-ba27-706d384d422c
+2025-09-30 09:16:07.253 [Test worker] DEBUG io.r2dbc.postgresql.Extensions - Discovering Extensions using ServiceLoader
+2025-09-30 09:16:07.254 [Test worker] DEBUG io.r2dbc.postgresql.Extensions - Registering extension io.r2dbc.postgresql.codec.BuiltinDynamicCodecs
+2025-09-30 09:16:08.348 [Test worker] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 4 endpoints beneath base path '/actuator'
+2025-09-30 09:16:08.403 [Test worker] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-09-30 09:16:08.626 [Test worker] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-09-30 09:16:08.645 [Test worker] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-09-30 09:16:08.691 [Test worker] INFO  c.i.b.BpmasterManageServiceApplicationTests - Started BpmasterManageServiceApplicationTests in 2.755 seconds (process running for 3.409)
+2025-09-30 09:16:09.091 [SpringApplicationShutdownHook] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-09-30 09:16:09.092 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application BPMASTER-MANAGE-SERVICE with eureka with status DOWN
+2025-09-30 09:19:54.576 [Test worker] INFO  c.i.b.BpmasterManageServiceApplicationTests - Starting BpmasterManageServiceApplicationTests using Java 21.0.7 with PID 3641 (started by devgrr in /Users/devgrr/interplug/practice/msa-demo/bpmaster-manage-service)
+2025-09-30 09:19:54.576 [Test worker] DEBUG c.i.b.BpmasterManageServiceApplicationTests - Running with Spring Boot v3.5.5, Spring v6.2.10
+2025-09-30 09:19:54.577 [Test worker] INFO  c.i.b.BpmasterManageServiceApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-09-30 09:19:54.943 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-09-30 09:19:55.008 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 62 ms. Found 6 R2DBC repository interfaces.
+2025-09-30 09:19:55.469 [Test worker] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=c022f4f3-c9c0-32bb-8c4a-ddc6357fff5b
+2025-09-30 09:19:55.595 [Test worker] DEBUG io.r2dbc.postgresql.Extensions - Discovering Extensions using ServiceLoader
+2025-09-30 09:19:55.596 [Test worker] DEBUG io.r2dbc.postgresql.Extensions - Registering extension io.r2dbc.postgresql.codec.BuiltinDynamicCodecs
+2025-09-30 09:19:56.165 [Test worker] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 4 endpoints beneath base path '/actuator'
+2025-09-30 09:19:56.220 [Test worker] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-09-30 09:19:56.473 [Test worker] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-09-30 09:19:56.495 [Test worker] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-09-30 09:19:56.539 [Test worker] INFO  c.i.b.BpmasterManageServiceApplicationTests - Started BpmasterManageServiceApplicationTests in 2.142 seconds (process running for 2.744)
+2025-09-30 09:19:56.929 [SpringApplicationShutdownHook] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-09-30 09:19:56.930 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application BPMASTER-MANAGE-SERVICE with eureka with status DOWN
+2025-09-30 14:45:52.836 [Test worker] INFO  c.i.b.BpmasterManageServiceApplicationTests - Starting BpmasterManageServiceApplicationTests using Java 17.0.12 with PID 72747 (started by devgrr in /Users/devgrr/interplug/practice/msa-demo/bpmaster-manage-service)
+2025-09-30 14:45:52.837 [Test worker] DEBUG c.i.b.BpmasterManageServiceApplicationTests - Running with Spring Boot v3.5.5, Spring v6.2.10
+2025-09-30 14:45:52.837 [Test worker] INFO  c.i.b.BpmasterManageServiceApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-09-30 14:45:53.220 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-09-30 14:45:53.284 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 59 ms. Found 6 R2DBC repository interfaces.
+2025-09-30 14:45:53.745 [Test worker] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=c022f4f3-c9c0-32bb-8c4a-ddc6357fff5b
+2025-09-30 14:45:53.884 [Test worker] DEBUG io.r2dbc.postgresql.Extensions - Discovering Extensions using ServiceLoader
+2025-09-30 14:45:53.885 [Test worker] DEBUG io.r2dbc.postgresql.Extensions - Registering extension io.r2dbc.postgresql.codec.BuiltinDynamicCodecs
+2025-09-30 14:45:54.435 [Test worker] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 4 endpoints beneath base path '/actuator'
+2025-09-30 14:45:54.491 [Test worker] INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-09-30 14:45:54.732 [Test worker] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-09-30 14:45:54.751 [Test worker] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-09-30 14:45:54.785 [Test worker] INFO  c.i.b.BpmasterManageServiceApplicationTests - Started BpmasterManageServiceApplicationTests in 2.132 seconds (process running for 2.873)
+2025-09-30 14:45:55.208 [SpringApplicationShutdownHook] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2025-09-30 14:45:55.209 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application BPMASTER-MANAGE-SERVICE with eureka with status DOWN
