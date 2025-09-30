@@ -3,10 +3,10 @@ package com.interplug.testservice;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.openfeign.EnableFeignClients;
+import org.springframework.data.r2dbc.repository.config.EnableR2dbcRepositories;
 
 @EnableDiscoveryClient
-@EnableFeignClients
+@EnableR2dbcRepositories  // R2DBC 활성화
 @SpringBootApplication
 public class TestServiceApplication {
 

@@ -13,9 +13,9 @@ public class SwaggerConfig {
     @Bean
     public OpenAPI openAPI() {
         Info info = new Info()
-                .title("Test Service API")
-                .version("v1.0")
-                .description("Test Service API 문서")
+                .title("Test Service API (Reactive)")
+                .version("v2.0.0")
+                .description("Spring WebFlux 기반 반응형 API")
                 .contact(new Contact()
                         .name("DevGrr")
                         .email("devgrr@interplug.com"));
@@ -25,7 +25,7 @@ public class SwaggerConfig {
                 .description("Current Server (Dynamic Port)");
 
         Server gatewayServer = new Server()
-                .url("http://localhost:8000")
+                .url("http://localhost:8080")
                 .description("Via API Gateway");
 
         return new OpenAPI()

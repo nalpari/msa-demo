@@ -6,73 +6,76 @@ import com.interplug.testservice.repository.TestRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
 
-import java.util.List;
-import java.util.stream.Collectors;
+import java.time.LocalDateTime;
 
 @Slf4j
 @Service
 @RequiredArgsConstructor
-@Transactional(readOnly = true)
 public class TestService {
 
     private final TestRepository testRepository;
 
-    @Transactional
-    public TestDto create(TestDto testDto) {
+    public Mono<TestDto> create(TestDto testDto) {
+        LocalDateTime now = LocalDateTime.now();
         Test test = Test.builder()
                 .name(testDto.getName())
                 .description(testDto.getDescription())
+                .createdAt(now)
+                .updatedAt(now)
                 .build();
 
-        test = testRepository.save(test);
-        log.info("Created Test entity with ID: {}", test.getId());
-        return convertToDto(test);
+        return testRepository.save(test)
+                .doOnSuccess(saved -> log.info("Created Test entity with ID: {}", saved.getId()))
+                .map(this::convertToDto);
     }
 
-    public TestDto findById(Long id) {
-        Test test = testRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Test not found with ID: " + id));
-        return convertToDto(test);
-    }
-
-    public List<TestDto> findAll() {
-        List<Test> tests = testRepository.findAll();
-        log.info("Found {} test entities", tests.size());
-        return tests.stream()
+    public Mono<TestDto> findById(Long id) {
+        return testRepository.findById(id)
                 .map(this::convertToDto)
-                .collect(Collectors.toList());
+                .switchIfEmpty(Mono.error(
+                    new RuntimeException("Test not found with ID: " + id)
+                ));
     }
 
-    public List<TestDto> findByNameContaining(String keyword) {
-        List<Test> tests = testRepository.findByNameContaining(keyword);
-        log.info("Found {} test entities with keyword: {}", tests.size(), keyword);
-        return tests.stream()
-                .map(this::convertToDto)
-                .collect(Collectors.toList());
+    public Flux<TestDto> findAll() {
+        return testRepository.findAll()
+                .doOnComplete(() -> log.info("Retrieved all test entities"))
+                .map(this::convertToDto);
     }
 
-    @Transactional
-    public TestDto update(Long id, TestDto testDto) {
-        Test test = testRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Test not found with ID: " + id));
-
-        test.setName(testDto.getName());
-        test.setDescription(testDto.getDescription());
-
-        test = testRepository.save(test);
-        log.info("Updated Test entity with ID: {}", test.getId());
-        return convertToDto(test);
+    public Flux<TestDto> findByNameContaining(String keyword) {
+        return testRepository.findByNameContaining(keyword)
+                .doOnComplete(() -> log.info("Search completed for keyword: {}", keyword))
+                .map(this::convertToDto);
     }
 
-    @Transactional
-    public void delete(Long id) {
-        if (!testRepository.existsById(id)) {
-            throw new RuntimeException("Test not found with ID: " + id);
-        }
-        testRepository.deleteById(id);
-        log.info("Deleted Test entity with ID: {}", id);
+    public Mono<TestDto> update(Long id, TestDto testDto) {
+        return testRepository.findById(id)
+                .switchIfEmpty(Mono.error(
+                    new RuntimeException("Test not found with ID: " + id)
+                ))
+                .flatMap(test -> {
+                    test.setName(testDto.getName());
+                    test.setDescription(testDto.getDescription());
+                    test.setUpdatedAt(LocalDateTime.now());
+                    return testRepository.save(test);
+                })
+                .doOnSuccess(updated -> log.info("Updated Test entity with ID: {}", updated.getId()))
+                .map(this::convertToDto);
+    }
+
+    public Mono<Void> delete(Long id) {
+        return testRepository.existsById(id)
+                .flatMap(exists -> {
+                    if (!exists) {
+                        return Mono.error(new RuntimeException("Test not found with ID: " + id));
+                    }
+                    return testRepository.deleteById(id)
+                            .doOnSuccess(v -> log.info("Deleted Test entity with ID: {}", id));
+                });
     }
 
     private TestDto convertToDto(Test test) {

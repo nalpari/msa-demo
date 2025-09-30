@@ -16,14 +16,14 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
 
 @Slf4j
 @RestController
 @RequestMapping("/api/tests")
 @RequiredArgsConstructor
-@Tag(name = "Test Controller", description = "Test 리소스를 관리하는 API")
+@Tag(name = "Test Controller", description = "Test 리소스를 관리하는 API (Reactive)")
 public class TestController {
 
     private final TestService testService;
@@ -36,10 +36,10 @@ public class TestController {
                     content = @Content(schema = @Schema(implementation = TestDto.class))),
             @ApiResponse(responseCode = "400", description = "잘못된 요청")
     })
-    public ResponseEntity<TestDto> createTest(@RequestBody TestDto testDto) {
+    public Mono<ResponseEntity<TestDto>> createTest(@RequestBody TestDto testDto) {
         log.info("Creating new Test: {}", testDto.getName());
-        TestDto created = testService.create(testDto);
-        return ResponseEntity.status(HttpStatus.CREATED).body(created);
+        return testService.create(testDto)
+                .map(created -> ResponseEntity.status(HttpStatus.CREATED).body(created));
     }
 
     @GetMapping("/{id}")
@@ -49,32 +49,34 @@ public class TestController {
                     content = @Content(schema = @Schema(implementation = TestDto.class))),
             @ApiResponse(responseCode = "404", description = "Test를 찾을 수 없음")
     })
-    public ResponseEntity<TestDto> getTestById(
+    public Mono<ResponseEntity<TestDto>> getTestById(
             @Parameter(description = "조회할 Test의 ID", required = true)
             @PathVariable Long id) {
         log.info("Fetching Test with ID: {}", id);
-        TestDto test = testService.findById(id);
-        return ResponseEntity.ok(test);
+        return testService.findById(id)
+                .map(ResponseEntity::ok)
+                .onErrorResume(e -> {
+                    log.error("Error fetching test: {}", e.getMessage());
+                    return Mono.just(ResponseEntity.notFound().build());
+                });
     }
 
     @GetMapping
     @Operation(summary = "모든 Test 조회", description = "모든 Test 목록을 조회합니다")
     @ApiResponse(responseCode = "200", description = "조회 성공")
-    public ResponseEntity<List<TestDto>> getAllTests() {
+    public Flux<TestDto> getAllTests() {
         log.info("Fetching all Tests");
-        List<TestDto> tests = testService.findAll();
-        return ResponseEntity.ok(tests);
+        return testService.findAll();
     }
 
     @GetMapping("/search")
     @Operation(summary = "Test 검색", description = "키워드로 Test를 검색합니다")
     @ApiResponse(responseCode = "200", description = "검색 성공")
-    public ResponseEntity<List<TestDto>> searchTests(
+    public Flux<TestDto> searchTests(
             @Parameter(description = "검색 키워드", required = true)
             @RequestParam String keyword) {
         log.info("Searching Tests with keyword: {}", keyword);
-        List<TestDto> tests = testService.findByNameContaining(keyword);
-        return ResponseEntity.ok(tests);
+        return testService.findByNameContaining(keyword);
     }
 
     @PutMapping("/{id}")
@@ -84,13 +86,17 @@ public class TestController {
                     content = @Content(schema = @Schema(implementation = TestDto.class))),
             @ApiResponse(responseCode = "404", description = "Test를 찾을 수 없음")
     })
-    public ResponseEntity<TestDto> updateTest(
+    public Mono<ResponseEntity<TestDto>> updateTest(
             @Parameter(description = "수정할 Test의 ID", required = true)
             @PathVariable Long id,
             @RequestBody TestDto testDto) {
         log.info("Updating Test with ID: {}", id);
-        TestDto updated = testService.update(id, testDto);
-        return ResponseEntity.ok(updated);
+        return testService.update(id, testDto)
+                .map(ResponseEntity::ok)
+                .onErrorResume(e -> {
+                    log.error("Error updating test: {}", e.getMessage());
+                    return Mono.just(ResponseEntity.notFound().build());
+                });
     }
 
     @DeleteMapping("/{id}")
@@ -99,51 +105,53 @@ public class TestController {
             @ApiResponse(responseCode = "204", description = "삭제 성공"),
             @ApiResponse(responseCode = "404", description = "Test를 찾을 수 없음")
     })
-    public ResponseEntity<Void> deleteTest(
+    public Mono<ResponseEntity<Void>> deleteTest(
             @Parameter(description = "삭제할 Test의 ID", required = true)
             @PathVariable Long id) {
         log.info("Deleting Test with ID: {}", id);
-        testService.delete(id);
-        return ResponseEntity.noContent().build();
+        return testService.delete(id)
+                .then(Mono.just(ResponseEntity.noContent().<Void>build()))
+                .onErrorResume(e -> {
+                    log.error("Error deleting test: {}", e.getMessage());
+                    return Mono.just(ResponseEntity.notFound().build());
+                });
     }
 
-    // Feign Client 통신 예제
+    // WebClient 통신 예제
     @GetMapping("/{testId}/user/{userId}")
-    @Operation(summary = "Test와 User 조회", description = "Test와 연관된 User 정보를 함께 조회합니다 (Feign Client 사용)")
+    @Operation(summary = "Test와 User 조회", description = "Test와 연관된 User 정보를 함께 조회합니다 (WebClient 사용)")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "조회 성공",
                     content = @Content(schema = @Schema(implementation = UserDto.class))),
             @ApiResponse(responseCode = "404", description = "리소스를 찾을 수 없음"),
             @ApiResponse(responseCode = "503", description = "User 서비스 불가능")
     })
-    public ResponseEntity<UserDto> getTestWithUser(
+    public Mono<ResponseEntity<UserDto>> getTestWithUser(
             @Parameter(description = "Test ID", required = true)
             @PathVariable Long testId,
             @Parameter(description = "User ID", required = true)
             @PathVariable Long userId) {
         log.info("Fetching Test {} with User {}", testId, userId);
 
-        // Test 조회
-        TestDto test = testService.findById(testId);
-        log.info("Found Test: {}", test.getName());
-
-        // Feign Client를 통한 User 서비스 호출
-        UserDto user = userServiceClient.getUserById(userId);
-        log.info("Found User via Feign: {}", user != null ? user.getName() : "null");
-
-        return ResponseEntity.ok(user);
+        return testService.findById(testId)
+                .doOnNext(test -> log.info("Found Test: {}", test.getName()))
+                .flatMap(test -> userServiceClient.getUserById(userId))
+                .map(ResponseEntity::ok)
+                .onErrorResume(e -> {
+                    log.error("Error fetching test or user: {}", e.getMessage());
+                    return Mono.just(ResponseEntity.status(HttpStatus.SERVICE_UNAVAILABLE).build());
+                });
     }
 
     @GetMapping("/users")
-    @Operation(summary = "모든 User 조회", description = "Feign Client를 통해 User 서비스의 모든 사용자를 조회합니다")
+    @Operation(summary = "모든 User 조회", description = "WebClient를 통해 User 서비스의 모든 사용자를 조회합니다")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "조회 성공"),
             @ApiResponse(responseCode = "503", description = "User 서비스 불가능")
     })
-    public ResponseEntity<List<UserDto>> getAllUsersViaFeign() {
-        log.info("Fetching all users via Feign Client");
-        List<UserDto> users = userServiceClient.getAllUsers();
-        log.info("Found {} users via Feign", users != null ? users.size() : 0);
-        return ResponseEntity.ok(users);
+    public Flux<UserDto> getAllUsersViaWebClient() {
+        log.info("Fetching all users via WebClient");
+        return userServiceClient.getAllUsers()
+                .doOnComplete(() -> log.info("Completed fetching users"));
     }
 }

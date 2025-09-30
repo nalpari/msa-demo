@@ -1,17 +1,16 @@
 package com.interplug.testservice.entity;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.hibernate.annotations.CreationTimestamp;
-import org.hibernate.annotations.UpdateTimestamp;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Column;
+import org.springframework.data.relational.core.mapping.Table;
 
 import java.time.LocalDateTime;
 
-@Entity
-@Table(name = "tests")
+@Table("tests")
 @Data
 @Builder
 @NoArgsConstructor
@@ -19,20 +18,17 @@ import java.time.LocalDateTime;
 public class Test {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false, length = 100)
+    @Column("name")
     private String name;
 
-    @Column(length = 500)
+    @Column("description")
     private String description;
 
-    @CreationTimestamp
-    @Column(nullable = false, updatable = false)
+    @Column("created_at")
     private LocalDateTime createdAt;
 
-    @UpdateTimestamp
-    @Column(nullable = false)
+    @Column("updated_at")
     private LocalDateTime updatedAt;
 }
